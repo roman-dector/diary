@@ -1,0 +1,15 @@
+.signup-switch {
+  margin-top: 40px;
+}
+.signup-switch:hover {
+  cursor: pointer;
+  color: #a28af5;
+}
+.auth-form {
+  position: relative;
+  padding: 100px 50px 60px;
+  min-width: 400px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+}

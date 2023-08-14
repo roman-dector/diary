@@ -1,0 +1,1 @@
+export { LoadGalleryComponent } from './ui';

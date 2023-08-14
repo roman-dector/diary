@@ -1,0 +1,1 @@
+export { SignUpFormComponent } from './ui';
