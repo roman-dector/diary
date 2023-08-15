@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { FirebaseError } from '@angular/fire/app';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Injectable({ providedIn: 'root' })
@@ -10,14 +9,7 @@ export class AuthService {
     try {
       await this.fireAuth.createUserWithEmailAndPassword(email, password);
     } catch (err) {
-      if (err instanceof FirebaseError) {
-        console.log({
-          code: err.code,
-          customData: err.customData,
-          name: err.name,
-          message: err.message,
-        });
-      }
+      throw err;
     }
   }
 

@@ -1,5 +1,7 @@
 # Diary
 
+Проект развернут на GitHub Pages: https://roman-dector.github.io/diary/diary#/auth
+
 ## Разработка
 
 Для запуска dev сервера используйте команду: `npm start`.
@@ -20,8 +22,12 @@ password: `124qwe`
 
 ---
 
+email: `some@vk.com`
+
+password: `fa#_K45$`
+
+---
+
 email: `beep@yandex.ru`
 
 password: `234122`
-
----

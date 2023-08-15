@@ -101,7 +101,7 @@ export class NotesService {
       : query(
           this.notesCollection!,
           orderBy('textData.time', 'desc'),
-          limit(!!this.refsCount ? this.refsCount : 10)
+          limit(!!this.refsCount ? this.refsCount + 1 : 10)
         );
 
     return (await getDocs(q)).docs as QueryDocumentSnapshot<Note>[];

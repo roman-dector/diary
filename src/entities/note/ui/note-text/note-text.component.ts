@@ -54,7 +54,6 @@ export class NoteTextComponent implements AfterViewInit {
     let height = Number.parseInt(
       getComputedStyle(this.editorElement.nativeElement).height
     );
-    console.log(height);
     if (height < 260) {
       this.shouldExpand$.next(false);
     } else {
